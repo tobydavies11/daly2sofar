@@ -190,18 +190,16 @@ uint16_t batteryCapacity = 280; // Battery capacity - in AH.
 
 // ENTER YOUR WIFI & MQTT BROKER DETAILS HERE
 
-//#define WIFI_SSID "BTHub5-JZSZ"
-#define WIFI_SSID "BtHub5-ANBF"
-#define WIFI_PASSWORD "5b2abeca43"
+
 
 // Set your Static IP address
 
 #ifdef BANK_A
-   IPAddress local_IP(172, 20, 30, 92 );
+   IPAddress local_IP(***,***, ***,*** );
 #elif defined(BANK_B)
-    IPAddress local_IP(172, 20, 30, 93 );
+    IPAddress local_IP(***,***,***,*** );
 #else
-   IPAddress local_IP(172, 20, 30, 94 );
+   IPAddress local_IP(***,***,***,*** );
 #endif   
 // Set your Gateway IP address
 IPAddress gateway(172, 20, 30, 1);
